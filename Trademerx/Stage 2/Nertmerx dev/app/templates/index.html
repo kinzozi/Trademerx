@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://unpkg.com/ionicons@4.5.0/dist/ionicons.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/styling.css">
+    <link rel="icon" href="../assets/faviconAsset.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Archivo" rel="stylesheet">
+
+    <title>Trademerx</title>
+  </head>
+  <body>
+
+  <header>
+    <div class="container-fluid container-header">
+      <div class="row header-nav flex-row">
+
+      <div class="col-md-4"></div>
+      <div class="col-md-4 text-center">
+        <img src="../assets/Asset4.png" class="img-fluid" id="asset4" alt="">
+      </div>
+
+      <div class="col-md-1 offset-md-3">
+        <button type="button" class="btn btn-outline-light" onclick="location.href = 'login.html'">Sign In </button>
+      </div>
+
+    </div>
+
+    <div class="row header-text">
+      <div class="col-md-4"></div>
+      <div class="col-md-4 text-center">
+        <h1>Explore, review, and trade your favorite eBooks and movies, all in one place.</h1>
+      </div>
+      <div class="col-md-4"></div>
+
+    </div>
+
+    <div class="row header-nav-mid">
+      <div class="col-md-4"></div>
+      <div class="col-md-4 text-center">
+        <button type="button" class="btn btn-outline-light btn-lg">Get Started</button>
+      </div>
+      <div class="col-md-4"></div>
+
+    </div>
+
+
+  </div>
+  <div class="container-fluid bottom-toggle">
+    <div class="row bottom-nav-main  bottom-toggle-row">
+      <div class="col-md-4 text-center" onclick="toggle1()" id="sec1">
+        <!--[Toggle Section 1]-->
+
+        <hr id="sec1hr">
+        <ion-icon name="pie" style="font-size: 10vh; color:white; "></ion-icon>
+        <br>
+        <h2>  Less content. More freedom. </h2>
+      </div>
+      <!--[End Toggle Section 1]-->
+
+
+      <div class="col-md-4 text-center" onclick="toggle2()" id="sec2">
+        <!--[Toggle Section 2]-->
+
+        <hr id="sec2hr">
+        <ion-icon name="time" style="font-size: 10vh; color:white; "></ion-icon>
+        <br>
+        <h2> Trade when you are ready.</h2>
+
+      </div>
+      <!--[End Toggle Section 2]-->
+
+      <div class="col-md-4 text-center" onclick="toggle3()"  id="sec3">
+        <!--[Toggle Section 3]-->
+        <hr id="sec3hr">
+        <ion-icon name="download" style="font-size: 10vh; color:white;"></ion-icon>
+
+        <h2>Read and watch wherever you choose.</h2>
+
+
+      </div>
+      <!--[End Toggle Section 3]-->
+
+    </div>
+  </header>
+
+<script type="text/javascript">
+  //color: #468C98; -- Logo active
+  let col1 = document.getElementById('sec1');
+  col1.style.opacity = 1;
+  let col2 = document.getElementById('sec2');
+  let col3 = document.getElementById('sec3');
+
+
+  let hrLine1 = document.getElementById('sec1hr')
+  hrLine1.style.opacity = 1;
+  let hrLine2 = document.getElementById('sec2hr');
+  let hrLine3 = document.getElementById('sec3hr');
+
+
+
+function toggle1() {
+  col1.style.opacity = 1;
+  hrLine1.style.opacity =  1;
+
+  col2.style.opacity = 0.5;
+  hrLine2.style.opacity = 0;
+
+  col3.style.opacity = 0.5;
+  hrLine3.style.opacity = 0;
+
+
+}
+function toggle2() {
+  col1.style.opacity = 0.5;
+  hrLine1.style.opacity =  0;
+
+  col2.style.opacity = 1;
+  hrLine2.style.opacity = 1;
+
+  col3.style.opacity = 0.5;
+  hrLine3.style.opacity = 0;
+
+}
+function toggle3() {
+  col1.style.opacity = 0.5;
+  hrLine1.style.opacity =  0;
+
+  col2.style.opacity = 0.5;
+  hrLine2.style.opacity = 0;
+
+  col3.style.opacity = 1;
+  hrLine3.style.opacity = 1;
+
+
+}
+</script>
+  </body>
+</html>
